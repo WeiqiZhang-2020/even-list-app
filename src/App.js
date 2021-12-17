@@ -1,5 +1,3 @@
-
-import Home from "./components/Home";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
@@ -10,11 +8,11 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar/>
+        <Navbar />
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Signup />
             </Route>
             <Route exact path="/signup">
               <Signup />
@@ -28,3 +26,5 @@ export default function App() {
     </Router>
   );
 }
+
+

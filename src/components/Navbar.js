@@ -1,3 +1,5 @@
+import "./navbar.css";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,8 +8,14 @@ import {
 } from "react-router-dom";
 export default function Navbar(props) {
   return (<>
-  <Link to="/signup">signup</Link>
-  <Link to="/login">login</Link>
-  
+    <nav className="nav-bar">
+      <div className="title">
+        Event List
+      </div>
+      <div className="link-container">
+        <Link className="link-signup" to="/signup">SIGNUP</Link>
+        <Link className="link-login" to="/login">LOGIN</Link>
+      </div>
+    </nav>
   </>);
 }
